@@ -28,7 +28,6 @@ body {
 
 #showcase h1 {
     font-size: 50px;
-
 }
 
 #showcase p {
@@ -74,7 +73,7 @@ body {
     float: left;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem) skewX(12deg);
+    transform: translateX(-3rem) skewX(10deg);
     position: relative;    
 }
 
@@ -116,10 +115,15 @@ body {
 
 a.akevinOzkaraca {
     text-decoration: none;
-    color: red;
+    color: yellow;
 }
 
 a.aHackzak {
     text-decoration: none;
-    color: red;
+    color: yellow;
+}
+
+p.leP {
+    padding: 20px;
+    color: ;
 }
