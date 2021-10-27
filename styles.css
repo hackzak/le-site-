@@ -44,3 +44,72 @@ body {
     border-radius: 10px;
     margin-top: 20px;
 }
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    padding-top: 15rem;
+}
+
+.titre {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: 700;
+}
+
+.conteneur {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(255,255,2551,0.6);
+    border-radius: 3px;
+    padding: 6rem;
+    font-size: 1.6rem;
+    transform: skewX(-12deg);
+}
+
+.conteneur_photo {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;    
+}
+
+.image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.5);
+    transition: all .5s;
+}
+
+.conteneurText {
+    transform: skewX(12deg);
+}
+
+.figTitre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+
+
+.conteneur:hover .figTitre {
+    cursor: pointer;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.conteneur:hover .image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+}
